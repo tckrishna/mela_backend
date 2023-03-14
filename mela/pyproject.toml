@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mela"
+version = "0.1.0"
+description = ""
+authors = ["GhentCDH"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+elasticsearch = {version = "^7.0.0", extras = ["async"]}
+gunicorn = "^20.1.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.5"
+typing-extensions = "^4.4.0"
+typer = "^0.7.0"
+rich = "^13.1.0"
+starlite = "^1.51"
+sqlalchemy = {version = "1.4.0", extras = ["asyncio"]}
+pyscopg2 = "^66.0.2"
+uvicorn = "^0.21.0"
+asyncpg = "^0.27.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
