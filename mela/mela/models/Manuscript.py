@@ -1,10 +1,9 @@
 from sqlalchemy.orm import declarative_base, Mapped
 from sqlalchemy import Column, Integer, String
+from mela.models.Base import Base, DtoBase
 
-Base = declarative_base()
-
-class Manuscript(Base):
-    __tablename__ = "test_manuscript"
+class Manuscript(Base, DtoBase):
+    __tablename__ = "manuscript"
     id: Mapped[int] = Column(Integer, primary_key=True)
     title: Mapped[str] = Column(String)
     author: Mapped[str] = Column(String)

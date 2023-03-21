@@ -1,2 +1,5 @@
 /.gitkeep
-mela/mela/create_table.py
+mela/create_tables.py
+mela/alembic
+mela/alembic.ini
+mela/schema.sql
