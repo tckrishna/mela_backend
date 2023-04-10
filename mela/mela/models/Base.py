@@ -1,5 +1,6 @@
 from sqlalchemy.orm import declarative_base
 from mela.settings import dto_factory
+from pydantic import BaseModel
 
 Base = declarative_base()
 
